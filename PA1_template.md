@@ -49,7 +49,7 @@ We plot the histogram of steps per day.
 hist(hist_act$steps, xlab = 'Steps', main = 'Frequency of steps per day')
 ```
 
-<img src="project_week2_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="/figure/fig1.png" width="672" />
 
 ## Calculating the mean of steps per day
 
@@ -99,7 +99,7 @@ Ploting the mean of steps per interval.
 plot(act_5_min$interval, act_5_min$steps, type = 'l', xlab = 'Interval', ylab = 'Steps', main = 'Mean of steps per interval')
 ```
 
-<img src="project_week2_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="figure/fig2.png" width="672" />
 
 ## Showing the interval with the highest mean of steps
 
@@ -198,7 +198,7 @@ With the new number of steps per day we can plot the histogram
 hist(hist_act$steps, xlab = 'Steps', main = 'Frequency of steps per day')
 ```
 
-<img src="project_week2_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<img src="/figure/fig3.png" width="672" />
 
 ## Aggregating the data by weekday or weekend
 
@@ -234,4 +234,4 @@ plot(x = act_5_min_week[act_5_min_week$week == 'Weekend', 'interval'], y = act_5
 plot(x = act_5_min_week[act_5_min_week$week == 'Weekday', 'interval'], y = act_5_min_week[act_5_min_week$week == 'Weekday', 'steps'], type = "l", main = 'Weekday', xlab = 'Interval', ylab = 'Number of steps')
 ```
 
-<img src="project_week2_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+<img src="figure/fig4.png" width="672" />
